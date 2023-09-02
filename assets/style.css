@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./images/banner-initial.png) fixed;
+  background: cover;
+}
+.modal-iframe{
+  display: none;
+
+}
+.modal-iframe:hover{
+display: block;
+}
