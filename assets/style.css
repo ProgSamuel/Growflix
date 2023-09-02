@@ -7,10 +7,9 @@ body {
   background: url(./images/banner-initial.png) fixed;
   background: cover;
 }
-.modal-iframe{
-  display: none;
 
-}
-.modal-iframe:hover{
-display: block;
-}
+/* .complemento-img {
+  display: none;
+  cursor: pointer;
+  transform: scale(.9);
+} */
