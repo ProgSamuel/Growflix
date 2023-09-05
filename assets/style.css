@@ -13,3 +13,21 @@ body {
   cursor: pointer;
   transform: scale(.9);
 } */
+
+.divider {
+  border-bottom: 1px solid gray;
+}
+
+h1 {
+  max-width: 60vw;
+  font-size: 5.5em;
+  font-weight: 800;
+}
+
+.assista {
+  font-size: 1.8em;
+}
+
+header p {
+  font-size: 1.2em;
+}

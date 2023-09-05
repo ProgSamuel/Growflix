@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: black;
+  }
+  header {
+    background: url(./images/growcast-01.png)  top/cover no-repeat ;
+  }
+  #bannerHome {
+    height: 80vh;
+  }
+
+  h1{
+    font-size: 6em;
+    font-weight: 700;
+  }
+
+  .tituloVideo{
+    font-size: .6em;
+    text-align: start;
+  }
+
+  .bi-play-circle:hover{
+    cursor: pointer;
+  }
+
+  .btn-close {
+    color: red; 
+    font-size: 1.5em;
+  }
+
+  .btn-close:hover {
+    color: darkred;
+    transform: scale(1.5);
+  }
+
+.cardVideos:hover {
+  transform:scaleY(1.2);
+  tranform: scaleX(1.1);
+}

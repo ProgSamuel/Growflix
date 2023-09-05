@@ -1,29 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title> Home </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/home.css">
+  
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <section class="videos">
-        <iframe src="https://www.youtube.com/embed/mxnEm03cYPc" frameborder="0" class="object-fit-cover" ></iframe>
-        <iframe
-              width="100%"
-              height="300"
-              id="video-frame"
-              src="https://www.youtube.com/embed/ZRhJT2nmvA4"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-            <div class="iframe-container" style="width: 200px; height: 100px;">
-                <img class="img" src="./assets/images/growcast-01.png" style="width: 300px; height: 100px;" alt="Capa">
-                <iframe class="modal-iframe" src="https://www.youtube.com/embed/mxnEm03cYPc" frameborder="0"></iframe>
-              </div>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="col-2">
+              <a href="./index.html"> <img src="./assets/images/logo-growflix.svg" class="p-2 w-100"> </a>
               
+            </div>
+            <div class="col-10">
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand text-light" href="#">Início </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#"> Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#"> Growcast </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#"> Flutter </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#"> UX/UI </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#"> Diversos </a>
+                  </li>
+              
+                </ul>
+              </div>
+            </div>
+           
+          
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+
+        <section class="row align-items-end pb-5" id="bannerHome" >
+          <div class="text-white">
+  
+            <h3 class="small fw-bold"> PODCAST </h3>
+            <h1 class="pt-1 pb-3"> GROWCAST </h1>
+            <button class="btn btn-light fw-bold"> <i class="bi bi-play-fill"></i> Assistir </button>
+          </div>
+     
+        </section>
+      </div>
+    </header>
+
+    <div id="modalAqui"></div>
+    <section class="container-fluid pt-5 bg-black">
+      <section class="container p-5">
+        <section class="row" id="painelConteudo">
+  
+        </section>
+      </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
