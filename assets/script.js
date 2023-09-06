@@ -1,6 +1,10 @@
 const videos = document.getElementById('videos');
 const painelConteudo = document.getElementById('painelConteudo');
 const modalAqui = document.getElementById('modalAqui');
+const growcast = document.getElementById('growcast');
+const Webinar = document.getElementById('Webinar');
+const ux = document.getElementById('ux');
+const diversos = document.getElementById('diversos');
 
 function getVideo() {
   for (const item of catalogo) {
@@ -10,12 +14,12 @@ function getVideo() {
     const categoria = item.categoria;
 
     painelConteudo.innerHTML += `
-      <div class="col-3 iframe-container abrir-modal conteudo cardVideos">
+      <div class="col-3 iframe-container abrir-modal conteudo cardVideos p-3">
         <div class="row">
-          <img class="img w-100" src="${img}" alt="${titulo}">
+          <img class="img w-100" onclick="verVideo({ titulo: '${titulo}', link: '${link}' })" data-bs-toggle="modal" data-bs-target="#myModal" src="${img}" alt="${titulo}">
         </div>
-        <div class="row text-light text-center fs-4 complemento-img m-auto">
-          <div class="col-2 py-2 fs-1" onclick="verVideo({ titulo: '${titulo}', link: '${link}' })" data-bs-toggle="modal" data-bs-target="#myModal">
+        <div class="row text-light text-center fs-4 complemento-img m-auto textoVideo">
+          <div class="col-2 py-2 fs-1" >
             <i class="bi bi-play-circle"></i>
           </div>
           <div class="col-10">
@@ -28,15 +32,13 @@ function getVideo() {
     `;
   }
 }
+// const videosFiltrados = catalogo.filter(video => video.categoria === categoriaSelecionada);
 
 getVideo();
 
 function verVideo(videoInfo) {
   const titulo = videoInfo.titulo;
   const link = videoInfo.link;
-  
-  // console.log(titulo, link);
-  // modal.show()
   modalAqui.innerHTML = `
 <div class="modal fade" id="myModal" tabindex="-1">
   <div class="modal-dialog modal-fullscreen">
@@ -55,18 +57,7 @@ function verVideo(videoInfo) {
     </div>
   </div>
 </div>
-
 `
 }
-
-function pauseVideo() {
-  const videoFrame = document.getElementById("videoFrame");
-
-  if (videoFrame && videoFrame instanceof HTMLMediaElement) {
-    videoFrame.pause();
-  }
-}
-// document.querySelector(".btn-close").addEventListener("click", pauseVideo);
-
 
 
