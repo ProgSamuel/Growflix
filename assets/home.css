@@ -63,3 +63,18 @@ opacity: .9;
 cursor: pointer;
 z-index: 1;
 }
+
+@media (max-width: 800px){
+  .logoSection{
+    height: 200px;
+  }
+  #bannerHome {
+    max-height: 250px;
+  }
+  #bannerHome h1 {
+    font-size: 1.8em;
+  }
+  #bannerHome h3 {
+   opacity: 0;
+  }
+}
